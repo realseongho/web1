@@ -14,31 +14,43 @@
 </script>
 
 <style>
-  a {color:black;
-     text-decoration:none;}
+body {margin:0}
+a {color:black;
+   text-decoration:none;}
+h1 {text-align:center;font-size:50px;font-family:monospace;
+    border-bottom:2px gray solid;
+    margin:0px;padding:20px;display:block;}
+.right {border-left:2px gray solid;padding-left: 20px}
+#grid {display:grid; grid-template-columns: 150px 1fr;}
+#grid ol {font-size:20px;}
+
+
+
 </style>
 
 </head>
 
 <body>
-  <h1><a href="index.html" title="Sweet Home">HOME</a></h1>
-  <h2>MY DAILY DIARY</h2>
-  <p>Yo whatsup guys
-    <br>I'm looking forward to studying coding.
-    <br>At first I studied <a href="https://opentutorials.org/course/3084" target="_blank" title="HTML Lecture">HTML</a> at 2021 Oct.04 and I did it!
-    <br>So it's time to play with CSS at OCt.09
-    <br>I will complete as ever.
-    <br>Plus I will organize something that i studied <u>here</u> to <strong>remind myself</strong>
-    <br>Thank you. and Pls browse my web site easily!
-    <br><a href="6.html" target="_blank" style="color:purple">ps.feedback is welcome.</a>
-  </p>
-    <strong>PRIORITY</strong>
+  <h1><a href="index.html" title="welcome">seongho's room</a></h1>
+  <div id="grid">
     <ol>
-      <a href="1.html" title="Lv.1"><li>HTML</li></a>
-      <a href="2.html" title="Lv.2" style="color:red;text-decoration:underline;"><li>CSS</li></a>
-      <a href="3.html"><li>Java Script</li></a>
+      <li><a href="1.html" title="Lv.1">HTML</a></li>
+      <li><a href="2.html" title="Lv.2">CSS</a></li>
+      <li><a href="3.html">Java Script</a></li>
     </ol>
-
+    <div class="right">
+      <h2>MY DAILY DIARY</h2>
+      <p>Yo whatsup guys
+        <br>I'm looking forward to studying coding.
+        <br>At first I studied <a href="https://opentutorials.org/course/3084" target="_blank" title="HTML Lecture">HTML</a> at 2021 Oct.04 and I did it!
+        <br>So it's time to play with CSS at Oct.09
+        <br>I will complete as ever.
+        <br>Plus I will organize something that i studied <u>here</u> to <strong>remind myself</strong>
+        <br>Thank you. and Pls browse my web site easily!
+        <br><span style="color:purple">ps.feedback is welcome.</span>
+      </p>
+    </div>
+  </div>
     <!--Start of Tawk.to Script-->
   <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
