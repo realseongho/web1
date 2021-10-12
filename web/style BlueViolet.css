@@ -1,0 +1,15 @@
+body {margin:0}
+a {color:black;
+   text-decoration:none;}
+h1 {text-align:center;font-size:50px;font-family:monospace;
+    border-bottom:2px BlueViolet solid;
+    margin:0px;padding:20px;display:block;}
+.right {border-left:2px BlueViolet solid;padding-left: 20px}
+#grid {display:grid; grid-template-columns: 150px 1fr;}
+#grid ol {font-size:20px;}
+/*screen width < 560*/
+@media(max-width:560px){
+  #grid {display:block;}
+  h1 {border-bottom:none;}
+  .right {border-left:none;}
+ }
