@@ -6,12 +6,38 @@
 </head>
 <body>
   <h1><a href="index.html" title="welcome">seongho's room</a></h1>
-  <input type="button" value="Night" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';">
+
   <script>
     document.write(10/2)
   </script>
   <p>asdasdasdasd</p>
+  <p1>comparison operator & boolean</p1>
+  <p>1===2</p>
+  <script>
+    document.write(1===2)
+  </script>
+  <p>1&gt2</p>
+  <script>
+    document.write(1>2)
+  </script>
+<br>
+  <script>
+    document.write("1<br>");
+    if(false){document.write("2<br>");}
+    else{document.write("3<br>");}
+    document.write("4<br>");
+  </script>
+  <input id="night_day" type="button" value="이럴" onclick="
+    if(document.querySelector('#night_day').value==='이럴')
+    {
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    document.querySelector('#night_day').value='수가';
+    }else
+    {
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    document.querySelector('#night_day').value='이럴';
+    }">
 </body>
 </html>
