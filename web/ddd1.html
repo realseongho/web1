@@ -18,5 +18,33 @@
 
     </script>
     </ul>
+    <a href="3.html">Jave Script</a>
+    <a href="2.html">CSS</a>
+
+    <input type="button" value="이럴" onclick="
+      var aaaa = document.querySelector('body')
+      if(this.value==='이럴')
+      {
+      aaaa.style.backgroundColor='black';
+      aaaa.style.color='white';
+      this.value='수가';
+
+      var links = document.querySelectorAll('a');
+      var i = 0;
+      while(i < links.length){
+      links[i].style.color='AliceBlue';
+      i = i + 1;}
+      }else
+      {
+      aaaa.style.backgroundColor='white';
+      aaaa.style.color='black';
+      this.value='이럴';
+
+      var links = document.querySelectorAll('a');
+      var i = 0;
+      while(i < links.length){
+      links[i].style.color='blue';
+      i = i + 1;}
+      }">
   </body>
 </html>
