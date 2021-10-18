@@ -12,7 +12,35 @@
 
     gtag('config', 'G-JG4B5JKCPX');
   </script>
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+  <script>
+    function linkscolor(color){
+      var links = document.querySelectorAll('a');
+      var i = 0;
+      while(i < links.length){
+      links[i].style.color=color;
+      i = i + 1;
+      }
+    }
+    function nightdayhandle(self){
+    var aaaa = document.querySelector('body')
+    if(self.value==='Lonely Night')
+    {
+    aaaa.style.backgroundColor='black';
+    aaaa.style.color='white';
+    self.value='Wake Up';
+
+    linkscolor('Cornsilk');
+    }else
+    {
+    aaaa.style.backgroundColor='white';
+    aaaa.style.color='black';
+    self.value='Lonely Night';
+
+    linkscolor('LightCoral');
+    }
+  }
+  </script>
 </head>
 
 <body>
@@ -24,45 +52,23 @@
       <li><a href="3.html" title="Lv.3">Java Script</a></li>
     </ol>
     <div class="right">
-      <h2>MY DAILY DIARY</h2>
-      <p>Yo whatsup guys
-        <br>I'm looking forward to studying coding.
-        <br>At first I studied <a href="https://opentutorials.org/course/3084" target="_blank" title="HTML Lecture">HTML</a> at 2021 Oct.04 and I did it!
-        <br>So it's time to play with CSS at Oct.09
-        <br>I will complete as ever.
-        <br>Plus I will organize something that i studied <u>here</u> to <strong>remind myself</strong>
-        <br>Thank you. and Pls browse my web site easily!
+      <h2>기록</h2>
+      <p>2021.10.04<br>
+        <h3>컴퓨터공학의 첫 걸음 HTML 입문.</h3><br>
+        조리학과에서 컴퓨터공학으로 진로를 바꾼데에는 단순한 호기심이었고,단순한 실증이었고 그리고 단순한 미래에 대한 걱정 때문이었다.<br>
+        사실 친형을 보고 매우 부러웠고,선망했기 때문에 이쪽 분야에 발을 들였다고 볼 수 있다.<br>
+        어떻게 시작해야 할지 모르겠어서 유튜브를 보고 HTML 웹 개발을 먼저 시작하게 되었고,그 다음 CSS,Javascript를 하게 되었다.<br>
+        그저 단순히 생활코딩을 보며 기본적이고 지극히 기초적인 지식들만 쌓아왔고,그 덕에 나는 무엇을 모르는지를 알게 되었고<br>
+        이것은 나에게 궁금증을 주었고,그것은 내가 이 분야에 흥미를 갖게 하는데 충분한 명분이었다.<br>
+        아직 나는 우물 안의 올챙이지만 내가 느끼기에 이 분야의 가장 매력적인 점은<br>
+        솔직하다는 점과 나의 상상력을 뽐낼 수 있다는 점이다.<br>
         <br><span style="color:purple">ps.feedback is welcome.</span>
       </p>
     </div>
   </div>
 
-  <input type="button" value="?" onclick="
-    var aaaa = document.querySelector('body')
-    if(this.value==='?')
-    {
-    aaaa.style.backgroundColor='black';
-    aaaa.style.color='white';
-    this.value='!';
-
-    var links = document.querySelectorAll('a');
-    var i = 0;
-    while(i < links.length){
-    links[i].style.color='Cornsilk';
-    i = i + 1;
-    }
-    }else
-    {
-    aaaa.style.backgroundColor='white';
-    aaaa.style.color='black';
-    this.value='?';
-
-    var links = document.querySelectorAll('a');
-    var i = 0;
-    while(i < links.length){
-    links[i].style.color='LightCoral';
-    i = i + 1;}
-    }">
+  <input type="button" value="Lonely Night" onclick="
+    nightdayhandle(this);">
 
   <a href="test.html" title="lab"><img id=jinro src="jinro.jpg" width="50px" style="border:5px white solid;
               position:fixed;top:0px;left:0px;"></img></a> <!--응용했지롱 ㅎㅎ재밌다ㅠㅠㅠㅠ-->

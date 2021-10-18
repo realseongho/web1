@@ -27,21 +27,47 @@
     else{document.write("3<br>");}
     document.write("4<br>");
   </script>
-  <input type="button" value="이럴" onclick="
-    var aaaa = document.querySelector('body')
-    if(this.value==='이럴')
-    {
-    aaaa.style.backgroundColor='black';
-    aaaa.style.color='white';
-    this.value='수가';
-    }else
-    {
-    aaaa.style.backgroundColor='white';
-    aaaa.style.color='black';
-    this.value='이럴';
-    }">
+  <ul>
+    <script>
+     function number(){
+       document.write('<li>2-1</li>');
+       document.write('<li>2-2</li>');
+     }
 
-    
+      document.write('<li>1</li>');
+      number()
+      document.write('<li>3</li>');
+      number()
+    </script>
+    <script>
+      function oneplusone(){
+        document.write(2+2+'<br>');
+      }
+      oneplusone();
+
+      function ddd(c,d){
+        document.write(c+d+'<br>');
+      }
+      ddd(2,4); //6
+      ddd(3,5);//8
+      function colors(left,right){
+      document.write('<div style="color:red">'+(left+right)+'</div>');
+      }
+      colors(3,5);
+
+      var coworkers = {
+        "singer":"Jang",
+        "listener":"Bae"
+      };
+      document.write("singer : "+coworkers.singer+"<br>");
+      document.write("listener : "+coworkers.listener+"<br>");
+      coworkers["data scientist"] = "seong ho";
+      document.write("data scientist : "+coworkers["data scientist"]+"<br>");
+
+    </script>
+  </ul>
+
+
 
 </body>
 </html>
