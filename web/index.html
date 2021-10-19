@@ -14,30 +14,42 @@
   </script>
     <link rel="stylesheet" href="style.css">
   <script>
-    function linkscolor(color){
-      var links = document.querySelectorAll('a');
-      var i = 0;
-      while(i < links.length){
-      links[i].style.color=color;
-      i = i + 1;
+
+    var Link = {
+      setcolor:function(color){
+        var links = document.querySelectorAll('a');
+        var i = 0;
+        while(i < links.length){
+        links[i].style.color=color;
+        i = i + 1;
+        }
       }
     }
+    var Body = {
+      setBackgroundColor:function(color){
+        document.querySelector('body').style.backgroundColor=color;
+      },
+      setColor:function(color){
+        document.querySelector('body').style.color=color;
+      }
+    }
+
     function nightdayhandle(self){
-    var aaaa = document.querySelector('body')
+    var target = document.querySelector('body')
     if(self.value==='Lonely Night')
     {
-    aaaa.style.backgroundColor='black';
-    aaaa.style.color='white';
+    Body.setBackgroundColor('black');
+    Body.setColor('white');
     self.value='Wake Up';
 
-    linkscolor('Cornsilk');
+    Link.setcolor('Cornsilk');
     }else
     {
-    aaaa.style.backgroundColor='white';
-    aaaa.style.color='black';
+    Body.setBackgroundColor('white');
+    Body.setColor('black');
     self.value='Lonely Night';
 
-    linkscolor('LightCoral');
+    Link.setcolor('LightCoral');
     }
   }
   </script>
@@ -70,21 +82,8 @@
   <input type="button" value="Lonely Night" onclick="
     nightdayhandle(this);">
 
-  <a href="test.html" title="lab"><img id=jinro src="jinro.jpg" width="50px" style="border:5px white solid;
+  <a href="test.html" title="lab"><img src="jinro.jpg" width="50px" style="border:5px white solid;
               position:fixed;top:0px;left:0px;"></img></a> <!--응용했지롱 ㅎㅎ재밌다ㅠㅠㅠㅠ-->
 
-    <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/615f0186157d100a41ab4610/1fhdhrua6';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
 </body>
 </html>

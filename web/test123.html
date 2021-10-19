@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>object객체</h1>
+    <script>
+      var friends = {
+      "me" : "seongho",
+      "electronic" : "jinho",
+      "art" : "jaehyung"
+    };
+
+      document.write("me : " + friends.me +"<br>");
+      document.write("electronic : " + friends.electronic +"<br>");
+      friends.girlfriend = "seungyeon";
+      document.write("girlfriend : " + friends.girlfriend +"<br>");
+      friends["art director"] = "jaejae";
+      document.write("art director : " + friends["art director"] +"<br>");
+    </script>
+    <h1>Iterate반복</h1>
+    <h3>for:Loop</h3>
+    <script>
+      for(var key in friends) {
+        document.write(key+' : '+friends[key]+'<br>');
+      }
+    </script>
+    <p>for는 Iterate반복인데 사용법은 for(var key in friends) {document.write(key);}-friends안에 있는 매개변수를 꺼내온다 전부.
+    </p>
+  
+  </body>
+</html>
