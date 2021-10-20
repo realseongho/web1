@@ -12,47 +12,10 @@
 
     gtag('config', 'G-JG4B5JKCPX');
   </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <link rel="stylesheet" href="style.css">
-  <script>
 
-    var Link = {
-      setcolor:function(color){
-        var links = document.querySelectorAll('a');
-        var i = 0;
-        while(i < links.length){
-        links[i].style.color=color;
-        i = i + 1;
-        }
-      }
-    }
-    var Body = {
-      setBackgroundColor:function(color){
-        document.querySelector('body').style.backgroundColor=color;
-      },
-      setColor:function(color){
-        document.querySelector('body').style.color=color;
-      }
-    }
-
-    function nightdayhandle(self){
-    var target = document.querySelector('body')
-    if(self.value==='Lonely Night')
-    {
-    Body.setBackgroundColor('black');
-    Body.setColor('white');
-    self.value='Wake Up';
-
-    Link.setcolor('Cornsilk');
-    }else
-    {
-    Body.setBackgroundColor('white');
-    Body.setColor('black');
-    self.value='Lonely Night';
-
-    Link.setcolor('LightCoral');
-    }
-  }
-  </script>
+  <script src="js.js"></script>
 </head>
 
 <body>
@@ -79,10 +42,10 @@
     </div>
   </div>
 
-  <input type="button" value="Lonely Night" onclick="
+  <input type="button" value="night" onclick="
     nightdayhandle(this);">
 
-  <a href="test.html" title="lab"><img src="jinro.jpg" width="50px" style="border:5px white solid;
+  <a href="test.html" title="lab" onclick="alert('Warning!')"><img src="jinro.jpg" width="50px" style="border:5px white solid;
               position:fixed;top:0px;left:0px;"></img></a> <!--응용했지롱 ㅎㅎ재밌다ㅠㅠㅠㅠ-->
 
 </body>
